@@ -1,0 +1,26 @@
+{
+	"id": "home",
+	"name": "Home",
+	"content": [
+		{
+			"id": "2w386754",
+			"type": "CAROUSEL",
+			"content" : null,
+			"config" : {
+				"show": "spotlight"
+			}
+		}, {
+			"id": "element987dxfgz7",
+			"type": "TEASER",
+			"content": "page12345",
+			"config" : null
+		}, {
+			"id": "element0j9ibdfg0",
+			"type": "NEWS_LIST",
+			"content": null,
+			"config" : {
+				"size": 7
+			}
+		}
+	]
+}

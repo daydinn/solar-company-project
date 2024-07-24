@@ -1,0 +1,18 @@
+{
+	"id": "projects",
+	"name": "Projects",
+	"content": [
+		{
+			"id": "element98dfg7",
+			"type": "HEADLINE",
+			"content": "Projects",
+			"config" : null
+		},
+		{
+			"id": "element0x9fvc8",
+			"type": "TEXT",
+			"content": "<p>Noch keine</p>",
+			"config" : null
+		}
+	]
+}

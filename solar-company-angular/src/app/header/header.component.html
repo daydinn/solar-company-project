@@ -1,0 +1,70 @@
+<header>
+  <div class="position-fixed z-3 w-100 bg-white py-3">
+    <!-- Start Navigation -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand me-5"
+           href="#"
+           title="Solar Company">
+          <img src="./assets/logo.svg"
+               alt="Solar Company"
+               width="130"
+               height="50">
+        </a>
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse"
+             id="navbarNav">
+          <ul class="navbar-nav me-auto fs-6 fw-normal">
+            <li class="nav-item" *ngFor="let navItem of navigation">
+              <a [class.active]="activeUrl?.startsWith('/' + navItem.id)"
+                 class="nav-link px-4"
+                 routerLink="/{{ navItem.id }}"
+                 title="{{ navItem.name }}">{{ navItem.name }}</a>
+            </li>
+          </ul>
+          <button
+                  [ngClass]="buttonState ? 'btn-search-close' : 'btn-search-open'"
+                  (click)="buttonState = !buttonState"
+                  class="btn ms-4 py-4 d-block"
+                  type="button"
+                  title="{{ buttonState ? 'Schließen' : 'Suchen' }}"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#search-box"
+                  aria-expanded="false"
+                  aria-controls="search-box">
+          </button>
+          <div class="btn-group btn-group-lg ms-4"
+               role="group"
+               aria-label="Basic outlined example">
+            <button class="btn btn-secondary px-3 py-2 pe-2 rounded-start-pill border-0 bg-light"
+                    type="button"
+                    title="Gebärdensprache">
+              <img src="./assets/icons/ico-gebaerdensprache.svg"
+                   alt="Gebärdensprache"
+                   width="25"
+                   height="25">
+            </button>
+            <button class="btn btn-secondary px-3 py-2 ps-2 rounded-end-circle border-0 bg-light"
+                    type="button"
+                    title="Leichte Sprache">
+              <img src="./assets/icons/ico-leichte-sprache.svg"
+                   alt="Leichte Sprache"
+                   width="25"
+                   height="25">
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navigation -->
+    <app-search-box></app-search-box>
+  </div>
+</header>

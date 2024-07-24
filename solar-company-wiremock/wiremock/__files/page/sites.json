@@ -1,0 +1,18 @@
+{
+	"id": "sites",
+	"name": "Sites",
+	"content": [
+		{
+			"id": "element98dfg7",
+			"type": "HEADLINE",
+			"content": "Sites",
+			"config" : null
+		},
+		{
+			"id": "element0x9fvc8",
+			"type": "TEXT",
+			"content": "<p>Soll noch kommen</p>",
+			"config" : null
+		}
+	]
+}

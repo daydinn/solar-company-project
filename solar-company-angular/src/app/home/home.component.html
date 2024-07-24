@@ -1,0 +1,8 @@
+<ng-container *ngFor="let content of pageContent">
+  <app-carousel *ngIf="content.type === 'CAROUSEL'"></app-carousel>
+  <app-info-box *ngIf="content.type === 'TEASER'"></app-info-box>
+  <app-news-list *ngIf="content.type === 'NEWS_LIST'" [buttonOutline]="false"></app-news-list>
+</ng-container>
+
+
+

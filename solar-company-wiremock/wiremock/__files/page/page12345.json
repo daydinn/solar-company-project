@@ -1,0 +1,18 @@
+{
+	"id": "page12345",
+	"name": "Lorem ipsum dolor sit amet",
+	"content": [
+		{
+			"id": "element98dfg7",
+			"type": "HEADLINE",
+			"content": "Lorem ipsum dolor sit amet",
+			"config" : null
+		},
+		{
+			"id": "element0x9fvc8",
+			"type": "TEXT",
+			"content": "<p>Ein kleines Bächlein namens Duden fließt durch ihren Ort und versorgt sie mit den nötigen Regelialien. Es ist ein paradiesmatisches Land, in dem einem gebratene Satzteile in den Mund fliegen. Nicht einmal von der allmächtigen Interpunktion werden die Blindtexte beherrscht – ein geradezu</p>",
+			"config" : null
+		}
+	]
+}

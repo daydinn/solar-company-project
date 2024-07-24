@@ -1,0 +1,61 @@
+/* Carousel
+ ------------------------------------------------------------ */
+
+.carousel-item img {
+  height: 676px;
+  margin-bottom: 60px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.carousel-indicators button,
+.carousel-indicators button.active {
+  filter: invert(1);
+}
+
+.carousel-caption {
+  background-color: #00589C;
+  left: unset;
+  max-width: 570px;
+  margin-right: 12px;
+  padding: 28px 30px 36px;
+  right: unset;
+  text-align: left;
+}
+
+.carousel-caption h5 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 34px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.carousel-caption p {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 28px;
+  font-weight: 300;
+  margin: 0;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  opacity: 1 !important;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #FFFFFF;
+  background-image: none;
+  border-radius: 50px;
+  height: 48px;
+  width: 48px;
+}
+
+.carousel-control-prev-icon img {
+  transform: rotate(180deg);
+}
+
+.carousel-control-prev-icon img,
+.carousel-control-next-icon img {
+  margin: 16px;
+}

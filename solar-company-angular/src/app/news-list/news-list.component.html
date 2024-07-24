@@ -1,0 +1,34 @@
+<section id="news-list">
+  <div class="container">
+    <div class="row">
+      <h2 class="text-center">News</h2>
+    </div>
+    <div class="row">
+        <div class="w-100 card-news-top">
+          <app-news-card orientation="horizontal" [news]="news[0]"></app-news-card>
+        </div>
+    </div>
+
+    <!-- Start News Grid Card  -->
+    <div class="row row-cols-1 row-cols-md-3 card-news-grid">
+      <ng-container *ngFor="let newsArticle of news.slice(1);">
+        <div class="col">
+          <app-news-card orientation="vertical" [news]="newsArticle"></app-news-card>
+        </div>
+      </ng-container>
+    </div>
+    <!-- End News Grid Card  -->
+
+    <div class="row">
+      <div class="w-100">
+        <!-- Start More News Button -->
+        <a class="btn btn-more-news"
+           [ngClass]="buttonOutline ? 'btn-outline-round' : 'btn-round'"
+           (click)="fetchMoreNews()"
+           role="button">Alle News</a>
+        <!-- End More News Button -->
+      </div>
+    </div>
+  </div>
+</section>
+

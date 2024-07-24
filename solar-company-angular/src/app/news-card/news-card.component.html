@@ -1,0 +1,56 @@
+<!-- Start Horizontal Card News -->
+<div *ngIf="orientation === 'horizontal' && news"
+     class="card card-news-horizontal">
+  <div class="row">
+    <div class="col-md-8 pe-md-0">
+      <div class="card-image">
+        <span class="badge badge-calendar"></span>
+        <img src="{{ url + news.image }}"
+             class="img-fluid"
+             alt="News">
+      </div>
+    </div>
+    <div class="col-md-4 ps-md-0">
+      <div class="d-flex flex-column h-100">
+        <div class="card-header">
+          <time class="card-text">{{ news.lastModified | date: 'dd.MM.yyyy' }}</time>
+          <p class="card-text news-category">{{ news.type }}</p>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">{{ news.title }}</h5>
+          <p class="card-text">{{ news.abstract }}</p>
+        </div>
+        <div class="card-footer ms-auto">
+          <a href="{{'/news/' + news.id}}"
+             class="card-link text-white float-end">Weiterlesen</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Horizontal Card News -->
+
+<!-- Start Vertical Card News -->
+<div *ngIf="orientation === 'vertical' && news"
+     class="card card-news-vertical h-100">
+  <div class="card-image">
+    <span class="badge badge-calendar"></span>
+    <img src="{{ url + news.image }}"
+         class="img-fluid"
+         alt="News">
+  </div>
+  <div class="card-header card-news-header">
+    <time class="card-text">{{ news.lastModified | date: 'dd.MM.yyyy' }}</time>
+    <p class="card-text news-category">{{ news.type }}</p>
+  </div>
+  <div class="card-body card-news-body">
+    <h5 class="card-title">{{ news.title }}</h5>
+    <p class="card-text">{{ news.abstract }}</p>
+  </div>
+  <div class="card-footer card-news-footer ms-auto">
+    <a href="{{ '/news/' + news.id }}"
+       class="card-link">Weiterlesen</a>
+  </div>
+</div>
+<!-- End Vertical Card News -->
+

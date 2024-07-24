@@ -1,0 +1,34 @@
+{
+	"size": 3,
+	"offset": 7,
+	"max": 10,
+	"list": [
+		{
+			"id": "140",
+			"lastModified": "2021-08-24",
+			"user": "Max Mustermann",
+			"type": "VERANSTALTUNG",
+			"title": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+			"abstract": "Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen sie in Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans …",
+			"image": "/assets/sample-2.jpg"
+		},
+		{
+			"id": "141",
+			"lastModified": "2021-08-24",
+			"user": "Max Mustermann",
+			"type": "VERANSTALTUNG",
+			"title": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+			"abstract": "Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen sie in Buchstabhausen an der Küste …",
+			"image": "/assets/sample-3.jpg"
+		},
+		{
+			"id": "142",
+			"lastModified": "2021-08-24",
+			"user": "Max Mustermann",
+			"type": "WISSENSCHAFT",
+			"title": "Lorem ipsum dolor sit amet, consectetuer",
+			"abstract": "Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte …",
+			"image": "/assets/sample-4.jpg"
+		}
+	]
+}

@@ -1,0 +1,18 @@
+{
+	"id": "network",
+	"name": "Our Network",
+	"content": [
+		{
+			"id": "element98dfg7",
+			"type": "HEADLINE",
+			"content": "Our Network",
+			"config" : null
+		},
+		{
+			"id": "element0x9fvc8",
+			"type": "TEXT",
+			"content": "<p>Gibts noch nicht</p>",
+			"config" : null
+		}
+	]
+}

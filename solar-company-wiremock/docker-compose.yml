@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  wiremock:
+    image: wiremock/wiremock:2.33.2
+    container_name: solar-company-wiremock
+    volumes:
+      - ./wiremock:/home/wiremock
+    ports:
+      - "38080:8080"
+    command: [ "--record-mappings", "--verbose", "--local-response-templating" ]

@@ -1,0 +1,724 @@
+{
+	"info": {
+		"_postman_id": "99afd1a8-1058-46f0-8718-a6bce68d4cab",
+		"name": "solar-company",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Page",
+			"item": [
+				{
+					"name": "get Page Tree",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:38080/api/v1/tree",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "38080",
+							"path": [
+								"api",
+								"v1",
+								"tree"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get Page Tree",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:38080/api/v1/tree",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "38080",
+									"path": [
+										"api",
+										"v1",
+										"tree"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Accept, Content-Type, Content-Encoding, Server, Transfer-Encoding"
+								},
+								{
+									"key": "Matched-Stub-Id",
+									"value": "9efa0723-24f1-45d4-a40f-59dea7111519"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding, User-Agent"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"navigation\": [\n        {\n            \"id\": \"home\",\n            \"name\": \"Home\"\n        },\n        {\n            \"id\": \"network\",\n            \"name\": \"Our Network\"\n        },\n        {\n            \"id\": \"sites\",\n            \"name\": \"Sites\"\n        },\n        {\n            \"id\": \"projects\",\n            \"name\": \"Projects\"\n        },\n        {\n            \"id\": \"news\",\n            \"name\": \"News\"\n        }\n    ],\n    \"landing\": \"home\"\n}"
+						}
+					]
+				},
+				{
+					"name": "get Page",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:38080/api/v1/page/home",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "38080",
+							"path": [
+								"api",
+								"v1",
+								"page",
+								"home"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "home",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:38080/api/v1/page/home",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "38080",
+									"path": [
+										"api",
+										"v1",
+										"page",
+										"home"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Accept, Content-Type, Content-Encoding, Server, Transfer-Encoding"
+								},
+								{
+									"key": "Matched-Stub-Id",
+									"value": "fea80cc1-b118-409e-a628-94a1ba45fab3"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding, User-Agent"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\r\n\t\"id\": \"home\",\r\n\t\"name\": \"Home\",\r\n\t\"content\": [\r\n\t\t{\r\n\t\t\t\"id\": \"2w386754\",\r\n\t\t\t\"type\": \"CAROUSEL\",\r\n\t\t\t\"content\" : null,\r\n\t\t\t\"config\" : {\r\n\t\t\t\t\"show\": \"spotlight\"\r\n\t\t\t}\r\n\t\t}, {\r\n\t\t\t\"id\": \"element987dxfgz7\",\r\n\t\t\t\"type\": \"TEASER\",\r\n\t\t\t\"content\": \"page12345\"\r\n\t\t\t\"config\" : null\r\n\t\t}, {\r\n\t\t\t\"id\": \"element0j9ibdfg0\",\r\n\t\t\t\"type\": \"NEWS_LIST\",\r\n\t\t\t\"content\": null,\r\n\t\t\t\"config\" : {\r\n\t\t\t\t\"size\": 7\r\n\t\t\t}\r\n\t\t}\r\n\t]\r\n}"
+						},
+						{
+							"name": "page12345",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:38080/api/v1/page/page12345",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "38080",
+									"path": [
+										"api",
+										"v1",
+										"page",
+										"page12345"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Accept, Content-Type, Content-Encoding, Server, Transfer-Encoding"
+								},
+								{
+									"key": "Matched-Stub-Id",
+									"value": "fea80cc1-b118-409e-a628-94a1ba45fab3"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding, User-Agent"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"page12345\",\n    \"name\": \"Lorem ipsum dolor sit amet\",\n    \"content\": [\n        {\n            \"id\": \"element98dfg7\",\n            \"type\": \"HEADLINE\",\n            \"content\": \"Lorem ipsum dolor sit amet\",\n            \"config\": null\n        },\n        {\n            \"id\": \"element0x9fvc8\",\n            \"type\": \"TEXT\",\n            \"content\": \"<p>Ein kleines Bächlein namens Duden fließt durch ihren Ort und versorgt sie mit den nötigen Regelialien. Es ist ein paradiesmatisches Land, in dem einem gebratene Satzteile in den Mund fliegen. Nicht einmal von der allmächtigen Interpunktion werden die Blindtexte beherrscht – ein geradezu</p>\",\n            \"config\": null\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "get Teaser",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:38080/api/v1/teaser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "38080",
+							"path": [
+								"api",
+								"v1",
+								"teaser"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "all Teaser",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:38080/api/v1/teaser",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "38080",
+									"path": [
+										"api",
+										"v1",
+										"teaser"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Accept, Content-Type, Content-Encoding, Server, Transfer-Encoding"
+								},
+								{
+									"key": "Matched-Stub-Id",
+									"value": "763e5c11-ded6-4af0-8a06-02eeeee1ad13"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding, User-Agent"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": \"page12345\",\n        \"titel\": \"Lorem ipsum dolor sit amet\",\n        \"abstract\": \"Ein kleines Bächlein namens Duden fließt durch ihren Ort und versorgt sie mit den nötigen Regelialien. Es ist ein paradiesmatisches Land, in dem einem gebratene Satzteile in den Mund fliegen. Nicht einmal von der allmächtigen Interpunktion werden die Blindtexte beherrscht – ein geradezu …\",\n        \"spotlight\": false,\n        \"bild\": \"/assets/sample-2.jpg\"\n    },\n    {\n        \"id\": \"page2345\",\n        \"titel\": \"Lorem ipsum \",\n        \"abstract\": \"Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben …\",\n        \"spotlight\": true,\n        \"bild\": \"/assets/sample-2.jpg\"\n    },\n    {\n        \"id\": \"page2346\",\n        \"titel\": \"Lorem ipsum dolor sit amet\",\n        \"abstract\": \"Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben …\",\n        \"spotlight\": true,\n        \"bild\": \"/assets/sample-1.jpg\"\n    },\n    {\n        \"id\": \"page2347\",\n        \"titel\": \"Sit amet\",\n        \"abstract\": \"Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben …\",\n        \"spotlight\": true,\n        \"bild\": \"/assets/sample-4.jpg\"\n    }\n]"
+						},
+						{
+							"name": "spotlight Teaser",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:38080/api/v1/teaser?spotlight=true",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "38080",
+									"path": [
+										"api",
+										"v1",
+										"teaser"
+									],
+									"query": [
+										{
+											"key": "spotlight",
+											"value": "true"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Accept, Content-Type, Content-Encoding, Server, Transfer-Encoding"
+								},
+								{
+									"key": "Matched-Stub-Id",
+									"value": "64dcb3a2-e60b-4e51-9626-9d55cd3c2578"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding, User-Agent"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": \"page2345\",\n        \"titel\": \"Lorem ipsum \",\n        \"abstract\": \"Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben …\",\n        \"spotlight\": true,\n        \"bild\": \"/assets/sample-2.jpg\"\n    },\n    {\n        \"id\": \"page2346\",\n        \"titel\": \"Lorem ipsum dolor sit amet\",\n        \"abstract\": \"Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben …\",\n        \"spotlight\": true,\n        \"bild\": \"/assets/sample-1.jpg\"\n    },\n    {\n        \"id\": \"page2347\",\n        \"titel\": \"Sit amet\",\n        \"abstract\": \"Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben …\",\n        \"spotlight\": true,\n        \"bild\": \"/assets/sample-4.jpg\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "get Teaser (Single)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:38080/api/v1/teaser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "38080",
+							"path": [
+								"api",
+								"v1",
+								"teaser"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Teaser page12345",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:38080/api/v1/teaser/page12345",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "38080",
+									"path": [
+										"api",
+										"v1",
+										"teaser",
+										"page12345"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Accept, Content-Type, Content-Encoding, Server, Transfer-Encoding"
+								},
+								{
+									"key": "Matched-Stub-Id",
+									"value": "1413a037-5a39-469d-994b-f78433dc25d9"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding, User-Agent"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"page12345\",\n    \"titel\": \"Lorem ipsum dolor sit amet\",\n    \"abstract\": \"Ein kleines Bächlein namens Duden fließt durch ihren Ort und versorgt sie mit den nötigen Regelialien. Es ist ein paradiesmatisches Land, in dem einem gebratene Satzteile in den Mund fliegen. Nicht einmal von der allmächtigen Interpunktion werden die Blindtexte beherrscht – ein geradezu …\",\n    \"spotlight\": false,\n    \"bild\": \"/assets/sample-2.jpg\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "News",
+			"item": [
+				{
+					"name": "get News",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:38080/api/v1/news?size=7&offset=0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "38080",
+							"path": [
+								"api",
+								"v1",
+								"news"
+							],
+							"query": [
+								{
+									"key": "size",
+									"value": "7"
+								},
+								{
+									"key": "offset",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "news",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:38080/api/v1/news?size=7&offset=0",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "38080",
+									"path": [
+										"api",
+										"v1",
+										"news"
+									],
+									"query": [
+										{
+											"key": "size",
+											"value": "7"
+										},
+										{
+											"key": "offset",
+											"value": "0"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Accept, Content-Type, Content-Encoding, Server, Transfer-Encoding"
+								},
+								{
+									"key": "Matched-Stub-Id",
+									"value": "ca1ef724-68ae-4b83-bef4-6b0bf749b5e0"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding, User-Agent"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"size\": 7,\n    \"offset\": 0,\n    \"max\": 10,\n    \"list\": [\n        {\n            \"id\": \"123\",\n            \"lastModified\": \"2021-08-24\",\n            \"user\": \"Max Mustermann\",\n            \"type\": \"VERANSTALTUNG\",\n            \"titel\": \"Lorem ipsum dolor sit amet, consectetuer adipiscing elit\",\n            \"abstract\": \"Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen sie in Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans …\",\n            \"bild\": \"/assets/sample-2.jpg\"\n        },\n        {\n            \"id\": \"124\",\n            \"lastModified\": \"2021-08-24\",\n            \"user\": \"Max Mustermann\",\n            \"type\": \"VERANSTALTUNG\",\n            \"titel\": \"Lorem ipsum dolor sit amet, consectetuer adipiscing elit\",\n            \"abstract\": \"Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen sie in Buchstabhausen an der Küste …\",\n            \"bild\": \"/assets/sample-3.jpg\"\n        },\n        {\n            \"id\": \"125\",\n            \"lastModified\": \"2021-08-24\",\n            \"user\": \"Max Mustermann\",\n            \"type\": \"WISSENSCHAFT\",\n            \"titel\": \"Lorem ipsum dolor sit amet, consectetuer\",\n            \"abstract\": \"Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte …\",\n            \"bild\": \"/assets/sample-4.jpg\"\n        },\n        {\n            \"id\": \"130\",\n            \"lastModified\": \"2021-08-24\",\n            \"user\": \"Max Mustermann\",\n            \"type\": \"WISSENSCHAFT\",\n            \"titel\": \"Lorem ipsum dolor sit amet, consectetuer adipiscing\",\n            \"abstract\": \"Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen sie in Buchstabhausen an der Küste …\",\n            \"bild\": \"/assets/sample-1.jpg\"\n        },\n        {\n            \"id\": \"131\",\n            \"lastModified\": \"2021-08-24\",\n            \"user\": \"Max Mustermann\",\n            \"type\": \"VERANSTALTUNG\",\n            \"titel\": \"Lorem ipsum dolor sit amet, consectetuer adipiscing elit\",\n            \"abstract\": \"Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen sie in Buchstabhausen an der Küste …\",\n            \"bild\": \"/assets/sample-3.jpg\"\n        },\n        {\n            \"id\": \"132\",\n            \"lastModified\": \"2021-08-24\",\n            \"user\": \"Max Mustermann\",\n            \"type\": \"WISSENSCHAFT\",\n            \"titel\": \"Lorem ipsum dolor sit amet, consectetuer\",\n            \"abstract\": \"Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte …\",\n            \"bild\": \"/assets/sample-4.jpg\"\n        },\n        {\n            \"id\": \"133\",\n            \"lastModified\": \"2021-08-24\",\n            \"user\": \"Max Mustermann\",\n            \"type\": \"WISSENSCHAFT\",\n            \"titel\": \"Lorem ipsum dolor sit amet, consectetuer adipiscing\",\n            \"abstract\": \"Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen sie in Buchstabhausen an der Küste …\",\n            \"bild\": \"/assets/sample-1.jpg\"\n        }\n    ]\n}"
+						},
+						{
+							"name": "more News",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:38080/api/v1/news?size=3&offset=7",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "38080",
+									"path": [
+										"api",
+										"v1",
+										"news"
+									],
+									"query": [
+										{
+											"key": "size",
+											"value": "3"
+										},
+										{
+											"key": "offset",
+											"value": "7"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Accept, Content-Type, Content-Encoding, Server, Transfer-Encoding"
+								},
+								{
+									"key": "Matched-Stub-Id",
+									"value": "5e9a340d-1ff3-4546-9a61-d485fcd761ec"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding, User-Agent"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"size\": 3,\n    \"offset\": 7,\n    \"max\": 10,\n    \"list\": [\n        {\n            \"id\": \"140\",\n            \"lastModified\": \"2021-08-24\",\n            \"user\": \"Max Mustermann\",\n            \"type\": \"VERANSTALTUNG\",\n            \"titel\": \"Lorem ipsum dolor sit amet, consectetuer adipiscing elit\",\n            \"abstract\": \"Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen sie in Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans …\",\n            \"bild\": \"/assets/sample-2.jpg\"\n        },\n        {\n            \"id\": \"141\",\n            \"lastModified\": \"2021-08-24\",\n            \"user\": \"Max Mustermann\",\n            \"type\": \"VERANSTALTUNG\",\n            \"titel\": \"Lorem ipsum dolor sit amet, consectetuer adipiscing elit\",\n            \"abstract\": \"Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen sie in Buchstabhausen an der Küste …\",\n            \"bild\": \"/assets/sample-3.jpg\"\n        },\n        {\n            \"id\": \"142\",\n            \"lastModified\": \"2021-08-24\",\n            \"user\": \"Max Mustermann\",\n            \"type\": \"WISSENSCHAFT\",\n            \"titel\": \"Lorem ipsum dolor sit amet, consectetuer\",\n            \"abstract\": \"Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte …\",\n            \"bild\": \"/assets/sample-4.jpg\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "get News (Single)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:38080/api/v1/news/123",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "38080",
+							"path": [
+								"api",
+								"v1",
+								"news",
+								"123"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "news 123",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:38080/api/v1/news/123",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "38080",
+									"path": [
+										"api",
+										"v1",
+										"news",
+										"123"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Accept, Content-Type, Content-Encoding, Server, Transfer-Encoding"
+								},
+								{
+									"key": "Matched-Stub-Id",
+									"value": "edc26e6d-d487-4db3-9883-0730b743ccb5"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding, User-Agent"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"123\",\n    \"lastModified\": \"2021-08-24\",\n    \"user\": \"Max Mustermann\",\n    \"type\": \"VERANSTALTUNG\",\n    \"titel\": \"Lorem ipsum dolor sit amet, consectetuer adipiscing elit\",\n    \"abstract\": \"Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen sie in Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans …\",\n    \"text\": \"<p class=\\\"important\\\">Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen sie in Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans. Ein kleines Bächlein namens Duden fließt durch ihren Ort und versorgt sie mit den nötigen Regelialien. Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen sie in Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans. Ein kleines Bächlein namens Duden fließt durch ihren Ort und versorgt sie mit den nötigen Regelialien.</p><p>Es ist ein paradiesmatisches Land, in dem einem gebratene Satzteile in den Mund fliegen. Nicht einmal von der allmächtigen Interpunktion werden die Blindtexte beherrscht – ein geradezu unorthographisches Leben. Eines Tages aber beschloß eine kleine Zeile Blindtext, ihr Name war Lorem Ipsum, hinaus zu gehen in die weite Grammatik. Der große Oxmox riet ihr davon ab, da es dort wimmele von bösen Kommata, wilden Fragezeichen und hinterhältigen Semikoli, doch das Blindtextchen ließ sich nicht beirren. Es packte seine sieben Versalien, schob sich sein Initial in den Gürtel und machte sich auf den Weg. Als es die ersten Hügel des Kursivgebirges erklommen hatte, warf es einen letzten Blick zurück auf die Skyline seiner Heimatstadt Buchstabhausen, die Headline von Alphabetdorf und die Subline seiner eigenen Straße, der Zeilengasse. Wehmütig lief ihm eine rhetorische Frage über die Wange, dann setzte es seinen Weg fort. Unterwegs traf es eine Copy. Die Copy warnte das Blindtextchen, da, wo sie herkäme wäre sie.</p><p>Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen sie in Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans. Ein kleines Bächlein namens Duden fließt durch ihren Ort und versorgt sie mit den nötigen Regelialien. Es ist ein paradiesmatisches Land, in dem einem gebratene Satzteile in den Mund fliegen. Nicht einmal von der allmächtigen Interpunktion werden die Blindtexte beherrscht – ein geradezu unorthographisches Leben. Eines Tages aber beschloß eine kleine Zeile Blindtext, ihr Name war Lorem Ipsum, hinaus zu gehen in die weite Grammatik. Der große Oxmox riet ihr davon ab, da es dort wimmele von bösen Kommata, wilden Fragezeichen und hinterhältigen Semikoli, doch das Blindtextchen ließ sich nicht beirren. Es packte seine sieben Versalien, schob sich sein Initial in den Gürtel und machte sich auf den Weg. Als es die ersten Hügel des Kursivgebirges erklommen hatte, warf es einen letzten Blick zurück auf die Skyline seiner Heimatstadt Buchstabhausen, die Headline von Alphabetdorf und die Subline seiner eigenen Straße, der Zeilengasse. Wehmütig lief ihm eine rhetorische Frage über die Wange, dann setzte es seinen Weg fort. Unterwegs traf es eine Copy. Die Copy warnte das Blindtextchen, da, wo sie herkäme wäre sie.</p>\",\n    \"bild\": \"/assets/sample-2.jpg\"\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

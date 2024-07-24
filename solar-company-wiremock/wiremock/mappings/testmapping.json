@@ -1,0 +1,182 @@
+{
+  "mappings": [
+    {
+      "scenarioName": "Get News List",
+      "request": {
+        "method": "GET",
+        "url": "/api/v1/news"
+      },
+      "response": {
+        "status": 200,
+        "bodyFileName": "news-list.json",
+        "headers": {
+          "Content-Type": "application/json",
+          "Access-Control-Allow-Origin": "*",
+          "Access-Control-Allow-Methods": "*",
+          "Access-Control-Allow-Headers": "Accept, Content-Type, Content-Encoding, Server, Transfer-Encoding"
+        }
+      }
+    },
+	{
+      "scenarioName": "Get News List",
+      "request": {
+        "method": "GET",
+        "url": "/api/v1/news?size=7&offset=0"
+      },
+      "response": {
+        "status": 200,
+        "bodyFileName": "news-list.json",
+        "headers": {
+          "Content-Type": "application/json",
+          "Access-Control-Allow-Origin": "*",
+          "Access-Control-Allow-Methods": "*",
+          "Access-Control-Allow-Headers": "Accept, Content-Type, Content-Encoding, Server, Transfer-Encoding"
+        }
+      }
+    },
+	{
+      "scenarioName": "Get News List Next 3",
+      "request": {
+        "method": "GET",
+        "url": "/api/v1/news?size=3&offset=7"
+      },
+      "response": {
+        "status": 200,
+        "bodyFileName": "news-list2.json",
+        "headers": {
+          "Content-Type": "application/json",
+          "Access-Control-Allow-Origin": "*",
+          "Access-Control-Allow-Methods": "*",
+          "Access-Control-Allow-Headers": "Accept, Content-Type, Content-Encoding, Server, Transfer-Encoding"
+        }
+      }
+    },
+	{
+      "scenarioName": "Get News Detail",
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/api/v1/news/.*"
+      },
+      "response": {
+        "status": 200,
+        "bodyFileName": "news/{{request.path.[3]}}.json",
+		"transformers": ["response-template"],
+        "headers": {
+          "Content-Type": "application/json",
+          "Access-Control-Allow-Origin": "*",
+          "Access-Control-Allow-Methods": "*",
+          "Access-Control-Allow-Headers": "Accept, Content-Type, Content-Encoding, Server, Transfer-Encoding"
+        }
+      }
+    },
+	{
+      "scenarioName": "Get News Detail Not Found",
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/api/v1/news/999"
+      },
+      "response": {
+        "status": 404,
+        "headers": {
+          "Content-Type": "application/json",
+          "Access-Control-Allow-Origin": "*",
+          "Access-Control-Allow-Methods": "*",
+          "Access-Control-Allow-Headers": "Accept, Content-Type, Content-Encoding, Server, Transfer-Encoding"
+        }
+      }
+    },
+	{
+      "scenarioName": "Get Teaser List",
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/api/v1/teaser"
+      },
+      "response": {
+        "status": 200,
+		"bodyFileName": "teaser-list.json",
+        "headers": {
+          "Content-Type": "application/json",
+          "Access-Control-Allow-Origin": "*",
+          "Access-Control-Allow-Methods": "*",
+          "Access-Control-Allow-Headers": "Accept, Content-Type, Content-Encoding, Server, Transfer-Encoding"
+        }
+      }
+    },	
+	{
+      "scenarioName": "Get Teaser List Filtered",
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/api/v1/teaser",
+		"queryParameters": {
+			"spotlight" : {
+				"equalTo": "true"
+			}
+		}
+      },
+      "response": {
+        "status": 200,
+		"bodyFileName": "teaser-list-spotlight.json",
+        "headers": {
+          "Content-Type": "application/json",
+          "Access-Control-Allow-Origin": "*",
+          "Access-Control-Allow-Methods": "*",
+          "Access-Control-Allow-Headers": "Accept, Content-Type, Content-Encoding, Server, Transfer-Encoding"
+        }
+      }
+    },
+	{
+      "scenarioName": "Get Teaser",
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/api/v1/teaser/.*"
+      },
+      "response": {
+        "status": 200,
+		"bodyFileName": "teaser/{{request.path.[3]}}.json",
+		"transformers": ["response-template"],
+        "headers": {
+          "Content-Type": "application/json",
+          "Access-Control-Allow-Origin": "*",
+          "Access-Control-Allow-Methods": "*",
+          "Access-Control-Allow-Headers": "Accept, Content-Type, Content-Encoding, Server, Transfer-Encoding"
+        }
+      }
+    },
+	{
+      "scenarioName": "Get Page",
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/api/v1/page/.*"
+      },
+      "response": {
+        "status": 200,
+		"bodyFileName": "page/{{request.path.[3]}}.json",
+		"transformers": ["response-template"],
+        "headers": {
+          "Content-Type": "application/json",
+          "Access-Control-Allow-Origin": "*",
+          "Access-Control-Allow-Methods": "*",
+          "Access-Control-Allow-Headers": "Accept, Content-Type, Content-Encoding, Server, Transfer-Encoding"
+        }
+      }
+    },
+	{
+      "scenarioName": "Get Tree",
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/api/v1/tree"
+      },
+      "response": {
+        "status": 200,
+		"bodyFileName": "tree.json",
+        "headers": {
+          "Content-Type": "application/json",
+          "Access-Control-Allow-Origin": "*",
+          "Access-Control-Allow-Methods": "*",
+          "Access-Control-Allow-Headers": "Accept, Content-Type, Content-Encoding, Server, Transfer-Encoding"
+        }
+      }
+    }
+    
+  ]
+}

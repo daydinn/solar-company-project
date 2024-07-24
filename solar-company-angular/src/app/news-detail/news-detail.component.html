@@ -1,0 +1,69 @@
+<div *ngIf="news" id="news-detail">
+  <!-- Start News Detail -->
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Start Breadcrumb -->
+      <nav style="--bs-breadcrumb-divider: url('assets/icons/ico-chevron-right.svg');"
+           aria-label="breadcrumb">
+        <div class="container">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="./home" title="Home">Home</a></li>
+            <li class="breadcrumb-item"><a href="./news" title="News">News</a></li>
+            <li class="breadcrumb-item active" aria-current="page">{{ news.title }}</li>
+          </ol>
+        </div>
+      </nav>
+      <!-- End Breadcrumb -->
+    </div>
+    <div class="row">
+      <!-- Start News Image -->
+      <div class="news-image">
+        <div class="bg-image"
+             [style.background-image]="'url(' + env.API_URL + news.image + ')'">
+        </div>
+        <div class="fg-image container">
+          <img src="{{ env.API_URL + news.image }}"
+               class="img-fluid"
+               alt="News">
+        </div>
+      </div>
+      <!-- End News Image -->
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="container">
+          <!-- Start News Text -->
+          <div class="news-text">
+            <!-- Start News Header -->
+            <div class="news-header">
+              <div class="d-flex flex-row">
+                <div class="news-badge">
+                    <span class="badge">
+                      <img src="assets/icons/ico-calendar-white.svg"
+                           alt="Next"
+                           width="25"
+                           height="25">
+                    </span>
+                </div>
+                <h1 class="news-title">{{ news.title }}</h1>
+              </div>
+            </div>
+            <!-- End News Header -->
+            <!-- Start News Body -->
+            <div class="news-body">
+              <p class="text-break fw-bold">{{ news.abstract }}</p>
+              <div class="text-break fw-light" [innerHTML]="news.text"></div>
+            </div>
+            <!-- End News Body -->
+            <hr class="border-1 opacity-25" />
+            <p class="news-info float-end">Zuletzt geändert am
+              <time class="news-date">{{ news.lastModified | date: 'dd.MM.yyyy' }}</time>
+              von <span class="news-autor">{{ news.user }}</span></p>
+          </div>
+          <!-- End News Text -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End News Detail -->
+</div>

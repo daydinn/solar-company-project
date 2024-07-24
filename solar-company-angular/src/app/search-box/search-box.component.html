@@ -1,0 +1,29 @@
+<div class="collapse position-fixed z-3 w-100 py-5 mt-3" id="search-box">
+  <div class="container">
+    <div class="input-group">
+      <input #searchInput
+             (input)="search(searchInput.value)"
+             type="search"
+             class="form-control"
+             placeholder="Suchbegriffe eingeben"
+             aria-label="Suchbegriffe eingeben"
+             aria-describedby="button-search">
+      <button
+        class="btn btn-md"
+        type="submit"
+        id="button-search"
+        title="Suchen"
+        (click)="search(searchInput.value)">
+      </button>
+    </div>
+
+    <ul class="search-result">
+      <!-- Subscribes to the observable news$ automatically with AsyncPipe -->
+      <li *ngFor="let news of news$ | async">
+        <a routerLink="/news/{{ news.id }}">
+          {{ news.title }}
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>

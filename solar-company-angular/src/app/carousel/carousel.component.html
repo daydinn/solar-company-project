@@ -1,0 +1,54 @@
+<section id="slideshow" >
+  <!-- Start News Carousel -->
+  <div id="carouselNews" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-indicators justify-content-end">
+      <button *ngFor="let teaser of teasers; index as i;"
+              [class.active]="i === 0"
+              type="button"
+              data-bs-target="#carouselNews"
+              [attr.data-bs-slide-to]="i"
+              [attr.aria-label]="'News ' + i">
+      </button>
+    </div>
+    <div class="carousel-inner">
+      <div *ngFor="let teaser of teasers; index as i"
+           [class.active]="i === 0"
+           class="carousel-item">
+        <img src="{{env.API_URL + teaser.image}}" class="d-block w-100" alt="News">
+        <div class="container">
+          <div class="carousel-caption d-md-block">
+            <h5>{{teaser.title}}</h5>
+            <p>{{teaser.abstract}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselNews"
+            data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"
+            aria-hidden="true">
+          <img src="./assets/icons/ico-arrow-right-black.svg"
+               alt="Next"
+               width="16"
+               height="16">
+      </span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselNews"
+            data-bs-slide="next">
+      <span class="carousel-control-next-icon"
+            aria-hidden="true">
+          <img src="./assets/icons/ico-arrow-right-black.svg"
+               alt="Next"
+               width="16"
+               height="16">
+      </span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- End News Carousel -->
+</section>

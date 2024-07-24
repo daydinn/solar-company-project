@@ -1,0 +1,24 @@
+[
+	{
+		"id": "page2345",
+		"title": "Lorem ipsum ",
+		"abstract": "Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben …",
+		"spotlight": true,
+		"image": "/assets/sample-2.jpg"
+	},
+	{
+		"id": "page2346",
+		"title": "Lorem ipsum dolor sit amet",
+		"abstract": "Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben …",
+		"spotlight": true,
+		"image": "/assets/sample-1.jpg"
+	}
+	,
+	{
+		"id": "page2347",
+		"title": "Sit amet",
+		"abstract": "Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben …",
+		"spotlight": true,
+		"image": "/assets/sample-4.jpg"
+	}
+]

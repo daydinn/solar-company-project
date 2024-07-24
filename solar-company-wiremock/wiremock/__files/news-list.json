@@ -1,0 +1,70 @@
+{
+	"size": 7,
+	"offset": 0,
+	"max": 10,
+	"list": [
+		{
+			"id": "123",
+			"lastModified": "2021-08-24",
+			"user": "Max Mustermann",
+			"type": "VERANSTALTUNG",
+			"title": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+			"abstract": "Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen sie in Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans …",
+			"image": "/assets/sample-2.jpg"
+		},
+		{
+			"id": "124",
+			"lastModified": "2021-08-24",
+			"user": "Max Mustermann",
+			"type": "VERANSTALTUNG",
+			"title": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+			"abstract": "Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen sie in Buchstabhausen an der Küste …",
+			"image": "/assets/sample-3.jpg"
+		},
+		{
+			"id": "125",
+			"lastModified": "2021-08-24",
+			"user": "Max Mustermann",
+			"type": "WISSENSCHAFT",
+			"title": "Lorem ipsum dolor sit amet, consectetuer",
+			"abstract": "Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte …",
+			"image": "/assets/sample-4.jpg"
+		},
+		{
+			"id": "130",
+			"lastModified": "2021-08-24",
+			"user": "Max Mustermann",
+			"type": "WISSENSCHAFT",
+			"title": "Lorem ipsum dolor sit amet, consectetuer adipiscing",
+			"abstract": "Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen sie in Buchstabhausen an der Küste …",
+			"image": "/assets/sample-1.jpg"
+		},
+		{
+			"id": "131",
+			"lastModified": "2021-08-24",
+			"user": "Max Mustermann",
+			"type": "VERANSTALTUNG",
+			"title": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+			"abstract": "Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen sie in Buchstabhausen an der Küste …",
+			"image": "/assets/sample-3.jpg"
+		},
+		{
+			"id": "132",
+			"lastModified": "2021-08-24",
+			"user": "Max Mustermann",
+			"type": "WISSENSCHAFT",
+			"title": "Lorem ipsum dolor sit amet, consectetuer",
+			"abstract": "Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte …",
+			"image": "/assets/sample-4.jpg"
+		},
+		{
+			"id": "133",
+			"lastModified": "2021-08-24",
+			"user": "Max Mustermann",
+			"type": "WISSENSCHAFT",
+			"title": "Lorem ipsum dolor sit amet, consectetuer adipiscing",
+			"abstract": "Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen sie in Buchstabhausen an der Küste …",
+			"image": "/assets/sample-1.jpg"
+		}
+	]
+}

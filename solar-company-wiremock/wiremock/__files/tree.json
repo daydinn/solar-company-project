@@ -1,0 +1,25 @@
+{
+	"navigation": [
+		{
+			"id": "home",
+			"name": "Home"
+		},
+		{
+			"id": "network",
+			"name": "Our Network"
+		},
+		{
+			"id": "sites",
+			"name": "Sites"
+		},
+		{
+			"id": "projects",
+			"name": "Projects"
+		},
+		{
+			"id": "news",
+			"name": "News"
+		}
+	],
+	"landing" : "home"
+}

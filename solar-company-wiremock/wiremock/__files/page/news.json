@@ -1,0 +1,14 @@
+{
+	"id": "news",
+	"name": "News",
+	"content": [
+		{
+			"id": "elementp0cgv8b",
+			"type": "NEWS_LIST",
+			"content": null,
+			"config" : {
+				"size": 7
+			}
+		}
+	]
+}

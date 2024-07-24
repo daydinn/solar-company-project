@@ -1,0 +1,22 @@
+#news-list {
+  background-color: #F4F4F4;
+
+  h2 {
+    color: #399248;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 34px;
+    font-weight: 400;
+    padding-bottom: calc(38px - 15px);
+    padding-top: 44px;
+  }
+
+  .card-news-grid .col,
+  .card-news-top {
+    padding: 15px;
+  }
+
+  .btn-more-news {
+    display: block;
+    margin: 35px auto 50px;
+  }
+}

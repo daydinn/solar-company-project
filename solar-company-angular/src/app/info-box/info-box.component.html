@@ -1,0 +1,25 @@
+<section *ngFor="let teaser of teasers" id="info-card" class="pt-4 pb-5">
+  <!-- Start Info Card-->
+  <div class="container">
+    <div class="card card-info bg-light my-5 p-4 border-0 rounded-0">
+      <div class="row">
+        <div class="col-xl-2">
+          <div class="card-image bg-white rounded-circle ">
+            <img src="./assets/icons/ico-sun.svg" alt="Sun" width="64" height="64">
+          </div>
+        </div>
+        <div class="col-xl-10">
+          <div class="card-body p-0">
+            <h5 class="card-title text-success display-6 fw-normal mb-3"
+                style="font-family: 'Roboto Condensed', sans-serif; padding-right: 170px;">{{ teaser.title }}</h5>
+            <p class="card-text" style="font-family: 'Roboto Condensed', sans-serif;">{{ teaser.abstract }}</p>
+            <a href="#" class="card-link float-end">
+              <img class="mt-3" src="./assets/icons/ico-arrow-right-black.svg" alt="Link" width="25" height="25">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Info Card -->
+</section>
